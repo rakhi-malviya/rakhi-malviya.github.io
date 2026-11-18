@@ -69,8 +69,7 @@
           <div class="art-orbit orbit-two"></div>
           <div class="art-sun"></div>
           <div class="profile-placeholder">
-            <span class="profile-initials">RM</span>
-            <span class="profile-caption">YOUR PHOTO<br>GOES HERE</span>
+            <img class="profile-photo" src="assets/images/profile.jpg" alt="Rakhi Malviya profile photo" width="400" height="400" style="width: 100%; height: 100%; object-fit: cover; object-position: center;" />
           </div>
           <div class="art-label label-top">LEARN <span>✳</span> CREATE</div>
           <div class="art-label label-bottom">IN PROGRESS · 2028</div>
@@ -177,7 +176,7 @@
             <p class="item-meta">B.TECH · EXPECTED 2028</p>
             <h3>Computer Science Engineering</h3>
             <p>Indore Institute of Science and Technology</p>
-            <span class="item-detail">Currently in 4th semester</span>
+            <!-- Semester detail removed to avoid outdated information -->
           </article>
           <div class="cert-block">
             <p class="item-meta">CERTIFICATIONS</p>
@@ -200,7 +199,7 @@
         <a class="email-link" href="mailto:rakhimalviya2006@gmail.com">rakhimalviya2006@gmail.com <span aria-hidden="true">↗</span></a>
         <div class="social-links">
           <a href="https://www.linkedin.com/in/rakhi-malviya-65339b328" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-          <a href="https://github.com/rakhimalviya" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+          <a href="https://github.com/rakhi-malviya" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </section>
@@ -211,8 +210,11 @@
       <a class="footer-brand" href="#home">RM<span>.</span></a>
       <p>Designed with intention. Built while learning.</p>
       <a href="#home" class="back-top">BACK TO TOP ↑</a>
-      <span class="copyright">© 2026 Rakhi Malviya</span>
+      <span class="copyright">© <span id="year"></span> Rakhi Malviya</span>
     </div>
   </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
